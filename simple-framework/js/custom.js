@@ -29,9 +29,16 @@ $(function() {
      
      
     
-    
-    
-    
+    // Tooltip
+			$('.tooltip').each(function(){
+				var title = $(this).attr('data-tooltip-title');
+				$(this).prepend("<i class='tooltip_content'>" + title + "</i>");
+				var tooltip_width = $(this).find("> i").outerWidth();
+				$(this).find("> i").css("margin-left", "-" + tooltip_width/2 + "px");
+			});
+			
+     
+     
     
     // Show/hide input value
 			$('input[type="text"], input[type="password"], input[type="email"]').each(function(){
@@ -40,6 +47,8 @@ $(function() {
 				$(this).blur(function() { if ($(this).val() == '') {$(this).val(valtxt);} });
 			});
 			$("textarea").focus(function() {if (this.value === this.defaultValue) {this.value = '';}}).blur(function() {if (this.value === '') {this.value = this.defaultValue;}});
+
+
 
 			
 	// Toggle checkbox (old ie fix)
