@@ -1,15 +1,25 @@
 $(function() {
 
+
+    // Input file value
+		    $('.upload input[type="file"]').change(function() {
+		        var uploadfilename = $(this).val();
+		        $(this).parent().find('input[type="text"]').attr('value', uploadfilename);
+		    });
+
+			
+
+
     // Tabs
-			$('.tab_content').hide();
-			$('.tab_select + .tab_content').show();
-			$('.tab_select li:first-child').addClass('active');
-			$('.tab_select li a').click(function(){
-				$(this).parent().parent().find('li').removeClass('active');
-				$(this).parent().addClass('active');
-				var currentTab = $(this).attr('href');
-				$(this).parent().parent().parent().find('.tab_content').hide();
-				$(currentTab).show();
+			$('.tab_select li:first-child, .tab_content:first-of-type').addClass('active');
+			$('.tab_select li').on('click', function(){
+				$(this).parent().find('li').removeClass('active').each(function(){
+					var tabsTarget = $(this).attr('data-tab');
+					$(tabsTarget).removeClass('active');
+				});
+				$(this).addClass('active');
+				var tabTarget = $(this).attr('data-tab');
+				$(tabTarget).addClass('active');
 				return false;
 			});
 
@@ -17,11 +27,14 @@ $(function() {
 
 
     // Dropdown
-			$('*[data-dropdown]').click(function(){
+			$('*[data-dropdown]').on('click', function(){
 				var datatarget = $(this).attr('data-dropdown');
 				$(datatarget).toggle();
 		        $('html').click(function(){
 		        	$(datatarget).hide();
+		        });
+		        $(datatarget).click(function(e){
+		        	e.stopPropagation();
 		        });
 				return false;
 			});
@@ -48,13 +61,5 @@ $(function() {
 			});
 			$("textarea").focus(function() {if (this.value === this.defaultValue) {this.value = '';}}).blur(function() {if (this.value === '') {this.value = this.defaultValue;}});
 
-
-
-			
-	// Toggle checkbox (old ie fix)
-			$('input[type="checkbox"]:checked + label').addClass('checked');
-			$('input[type="checkbox"] + label').on('click', function(){
-				$(this).toggleClass('checked');
-			});
 
 }); 

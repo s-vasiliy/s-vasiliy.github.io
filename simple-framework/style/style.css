@@ -28,12 +28,12 @@ ul, li {list-style:none;}
 input {vertical-align:middle;}
 input:focus, textarea:focus {outline:none;}
 button, input[type="submit"] {cursor:pointer;-webkit-appearance:none;}
-a, a:active, a:visited {text-decoration:none;color:#e9702e;}
+a, a:active, a:visited {text-decoration:none;color:#e9702e;transition:color linear .2s;}
 a:hover {text-decoration:none;color:#e9702e;}
 
 
 /* All */
-.wrapper {width:1200px;margin:0 auto;-webkit-box-sizing:border-box;box-sizing:border-box;padding:0 15px;}
+.wrapper {width:1200px;margin:0 auto;box-sizing:border-box;padding:0 15px;}
 .clear:after, .wrapper:after {content:'';display:block;height:0;clear:both;}
 .center {text-align:center;}
 
@@ -41,14 +41,15 @@ a:hover {text-decoration:none;color:#e9702e;}
 
 
 /* Grid */
-.grid_row {margin-bottom:20px;}
+.grid_row {margin-bottom:20px;font-size:0;line-height:0;}
 .grid_row:after {content:'';display:block;height:0;clear:both;}
-.grid_row [class^="grid_"] {float:left;}
+.grid_row > [class^="grid_"] {display:inline-block;vertical-align:top;font:14px 'Lato', sans-serif;}
+.grid_row .grid_row {margin-bottom:0;}
 .grid_row_pad {margin:0 -10px;}
-.grid_row_pad [class^="grid_"] {padding:0 10px 20px 10px;}
-.grid_row .grid_centered {clear:both;margin:0 auto 20px auto;float:none;}
+.grid_row_pad > [class^="grid_"] {padding:10px;}
+.grid_row .grid_centered {margin-left:auto;margin-right:auto;display:block;}
 
-.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {-webkit-box-sizing:border-box;box-sizing:border-box;}
+.grid_row, .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {box-sizing:border-box;}
 .grid_1 {width:8.333%;}
 .grid_2 {width:16.666%;}
 .grid_3 {width:25%;}
@@ -75,9 +76,7 @@ a:hover {text-decoration:none;color:#e9702e;}
 .grid_offset_11 {margin-left:91.667%;}
 
 	/* Demo */
-.grid_row [class^="grid_"] {background:#fff;border:1px solid #ccc;padding:10px;}
-.grid_row_pad [class^="grid_"] {background:none;border:none;padding:0 10px 20px 10px;}
-.grid_row_pad [class^="grid_"] p {background:#fff;border:1px solid #ccc;padding:10px;}
+.grid_row > [class^="grid_"] p {border:1px solid #ccc;padding:10px;}
 
 
 
@@ -96,7 +95,7 @@ hr {margin:100px 0;border:none;border-bottom:2px solid #ccc;}
 
 
 /* Buttons */
-.button, .button:visited {color:#fff;padding:0 15px;min-height:45px;font:18px/45px 'Lato', sans-serif;background:#5bc0de;margin:0 10px 5px 0;border:none;border-radius:0;display:inline-block;vertical-align:middle;text-align:center;}
+.button, .button:visited {color:#fff;padding:0 15px;min-height:45px;font:18px/45px 'Lato', sans-serif;background:#5bc0de;margin:0 10px 5px 0;border:none;border-radius:0;display:inline-block;vertical-align:middle;text-align:center;transition:background-color linear .2s, color linear .2s;}
 .button:hover {color:#fff;background:#31b0d5;}
 .button.button_small, .button.button_small:visited {min-height:30px;line-height:30px;font-size:14px;}
 .button.button_medium, .button.button_medium:visited {min-height:37px;line-height:37px;font-size:16px;}
@@ -107,13 +106,17 @@ hr {margin:100px 0;border:none;border-bottom:2px solid #ccc;}
 /* Form styles */
 input[type="checkbox"] {display:none;}
 input[type="checkbox"] + label {cursor:pointer;padding-left:25px;background:url(../images/icons/checkbox_unchecked.png) 0 center no-repeat;display:inline-block;vertical-align:middle;}
-input[type="checkbox"]:checked + label, input[type="checkbox"] + label.checked, input[type="checkbox"] + label:active {background-image:url(../images/icons/checkbox_checked.png);}
+input[type="checkbox"]:checked + label, input[type="checkbox"] + label:active {background-image:url(../images/icons/checkbox_checked.png);}
 input[type="radio"] {display:none;}
 input[type="radio"] + label {cursor:pointer;padding-left:25px;background:url(../images/icons/radio_unchecked.png) 0 center no-repeat;display:inline-block;vertical-align:middle;}
 input[type="radio"]:checked + label, input[type="radio"] + label:active {background-image:url(../images/icons/radio_checked.png);}
-input[type="text"], textarea, select {width:100%;border:1px solid #ccc;padding:0 10px;color:#666;font:14px 'Lato', sans-serif;height:35px;-webkit-box-sizing:border-box;box-sizing:border-box;}
+input[type="text"], textarea, select {width:100%;border:1px solid #ccc;padding:0 10px;color:#666;font:14px 'Lato', sans-serif;height:35px;box-sizing:border-box;}
 input[type="text"]:focus, textarea:focus, select:focus {outline:none;box-shadow:rgba(0,0,0,.2) 0 1px 1px 0;}
 textarea {padding:10px;height:100px;}
+.upload {position:relative;}
+.upload input[type="text"] {width:78%;margin-right:2%;height:47px;}
+.upload input[type="submit"] {width:20%;margin:0;}
+.upload input[type="file"] {position:absolute;top:0;left:0;width:100%;height:48px;opacity:0;cursor:pointer;}
 
 
 
@@ -127,11 +130,11 @@ textarea {padding:10px;height:100px;}
 
 
 /* Tabs */
-.tab_select li {float:left;}
-.tab_select li a, .tab_select li a:visited {display:block;padding:10px;}
-.tab_select li a:hover {background:#ebebeb;}
-.tab_select li.active a, .tab_select li.active a:visited, .tab_select li.active a:hover {font-weight:bold;}
-.tab_content {clear:both;padding:10px;}
+.tab_select li {float:left;cursor:pointer;padding:10px;}
+.tab_select li:hover {background:#ebebeb;}
+.tab_select li.active {font-weight:bold;background:#f7f5f5;color:#626363;}
+.tab_content {display:none;background:#f7f5f5;padding:10px;}
+.tab_content.active {display:block;}
 
 
 
@@ -198,7 +201,6 @@ textarea {padding:10px;height:100px;}
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 .wrapper {width:768px;}
 /* Grid */
-.grid_tablet_clear {clear:both;}
 .grid_tablet_1 {width:8.333%;}
 .grid_tablet_2 {width:16.666%;}
 .grid_tablet_3 {width:25%;}
@@ -229,7 +231,6 @@ textarea {padding:10px;height:100px;}
 	/* Mobile portrait and landscape modes */
 @media only screen and (max-width: 767px) {
 /* Grid */
-.grid_mobile_clear {clear:both;}
 .grid_mobile_1 {width:8.333%;}
 .grid_mobile_2 {width:16.666%;}
 .grid_mobile_3 {width:25%;}
@@ -267,6 +268,5 @@ textarea {padding:10px;height:100px;}
 @media only screen and (max-width: 479px) {
 .wrapper {width:300px;}
 /* Grid */
-.grid_row [class^="grid_"] {float:none;}
 .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {width:100%;}
 }
