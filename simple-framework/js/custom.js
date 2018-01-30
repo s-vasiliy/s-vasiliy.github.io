@@ -1,7 +1,50 @@
 $(function() {
 
 
-    // Input file value
+    // Header
+		    $('section').each(function() {
+		        var sectionName = $(this).find('> h3:first-of-type').html();
+		        var sectionClass = $(this).attr('class');
+		        $('.header ul').append('<li><a data-slide=".' + sectionClass + '" href="#">' + sectionName + '</a></li>');
+		    });
+
+
+			// Show active state
+			var section = $('section');
+			var links = $('.header ul li');
+			$(window).on('load scroll', function() {
+				var currentPosition = $(this).scrollTop();
+				var headerHeight = $('.header').height();
+				links.removeClass('current');
+	        	section.removeClass('currentsection');
+				section.each(function() {
+			        var top = $(this).offset().top - headerHeight,
+			            bottom = top + $(this).height();
+			        if (currentPosition >= top && currentPosition <= bottom) {
+			        	var thisClass = $(this).attr('class');
+			        	$('a[data-slide=".' + thisClass + '"]').parent().addClass('current');
+			        	$(this).addClass('currentsection');
+			    	}
+				}); 
+			});
+
+			
+
+
+    // Data slide
+			$('*[data-slide]').on('click', function(){
+				var slideTarget = $(this).data('slide');
+				var headerHeight = $('.header').height();
+			    $('html, body').animate({
+			        scrollTop: $(slideTarget).offset().top - headerHeight
+			    }, 1000);
+				return false;
+			});
+
+
+
+
+    // Upload input file value
 		    $('.upload input[type="file"]').change(function() {
 		        var uploadfilename = $(this).val();
 		        $(this).parent().find('input[type="text"]').attr('value', uploadfilename);
@@ -26,9 +69,18 @@ $(function() {
 
 
 
+    // Accordion
+			$(".accordion dl dt:first-of-type").addClass('active');
+			$(".accordion dl dt").on('click', function(){
+				$(this).toggleClass('active').next('dd').slideToggle();
+			});
+
+			
+			
+			
     // Dropdown
 			$('*[data-dropdown]').on('click', function(){
-				var datatarget = $(this).attr('data-dropdown');
+				var datatarget = $(this).data('dropdown');
 				$(datatarget).toggle();
 		        $('html').click(function(){
 		        	$(datatarget).hide();
