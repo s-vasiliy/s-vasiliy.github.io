@@ -14,7 +14,7 @@
 */
 
 
-@font-face {font-family: 'Copperplate';src: url('fonts/Copperplate.eot');src: url('fonts/Copperplate.eot?#iefix') format('embedded-opentype'), url('fonts/Copperplate.woff2') format('woff2'), url('fonts/Copperplate.woff') format('woff'), url('fonts/Copperplate.ttf') format('truetype'), url('fonts/Copperplate.svg#Copperplate') format('svg');font-weight: normal;font-style: normal;font-display: swap;}
+@font-face {font-family: 'Reza Zulmi Sans';src: url('fonts/RezaZulmiSans.eot');src: url('fonts/RezaZulmiSans.eot?#iefix') format('embedded-opentype'), url('fonts/RezaZulmiSans.woff2') format('woff2'), url('fonts/RezaZulmiSans.woff') format('woff'), url('fonts/RezaZulmiSans.ttf') format('truetype'), url('fonts/RezaZulmiSans.svg#RezaZulmiSans') format('svg');font-weight: normal;font-style: normal;font-display: swap;}
 @font-face {font-family: 'Copperplate';src: url('fonts/Copperplate-Bold.eot');src: url('fonts/Copperplate-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/Copperplate-Bold.woff2') format('woff2'), url('fonts/Copperplate-Bold.woff') format('woff'), url('fonts/Copperplate-Bold.ttf') format('truetype'), url('fonts/Copperplate-Bold.svg#Copperplate-Bold') format('svg');font-weight: 700;font-style: normal;font-display: swap;}
 
 
@@ -38,18 +38,18 @@ a:active, a:hover {outline:0;text-decoration:none;color:#137581;}
 
 /* All */
 .wrapper {max-width:1720px;padding:0 15px;margin:0 auto;position:relative;}
-h1 {font:201px 'Copperplate';letter-spacing:22px;text-shadow:#fff 0 0 24px;}
-h2 {font:96px/115px 'Copperplate';letter-spacing:10px;text-transform:uppercase;text-shadow:#e7af2a 0 0 18px, #e7af2a 0 0 18px;padding-bottom:100px;max-width:1200px;margin:0 auto;}
-h3 {font:75px 'Copperplate';}
-h4 {font:51px 'Copperplate';}
+h1 {font:170px 'Reza Zulmi Sans';letter-spacing:50px;text-shadow:#fff 0 0 24px;}
+h2 {font:86px/115px 'Reza Zulmi Sans';letter-spacing:10px;text-transform:uppercase;text-shadow:#e7af2a 0 0 18px, #e7af2a 0 0 18px;padding-bottom:100px;max-width:1200px;margin:0 auto;}
+h3 {font:75px 'Reza Zulmi Sans';}
+h4 {font:51px 'Reza Zulmi Sans';}
 h5 {font:46px 'Alegreya Sans';letter-spacing:6px;text-transform:uppercase;}
 h5 span {font-size:71px;}
-h6 {font:33px 'Copperplate';letter-spacing:3px;text-transform:uppercase;text-shadow:#fff 0 0 18px, #fff 0 0 18px;padding-bottom:50px;}
+h6 {font:27px 'Reza Zulmi Sans';letter-spacing:3px;text-transform:uppercase;text-shadow:#fff 0 0 18px, #fff 0 0 18px;padding-bottom:50px;}
 p {padding-bottom:10px;}
 
 input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-serif;color:#fff;background:rgba(39,100,108,.54);border:5px solid #33848e;border-radius:30px;padding:0 20px;height:68px;width:100%;box-sizing:border-box;}
 
-.button, .button:visited {color:#fff;background:#137581 url(../images/button.png) center center/98% auto no-repeat;padding:35px 45px;height:135px;width:562px;font:30px 'Copperplate';text-transform:uppercase;letter-spacing:3px;box-shadow:rgba(31,206,227,.7) 0 0 35px 2px;border:none;border-radius:65px;text-align:center;display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;box-sizing:border-box;transition:background-color ease-in-out .2s, box-shadow ease-in-out .2s;}
+.button, .button:visited {color:#fff;background:#137581 url(../images/button.png) center center/98% auto no-repeat;padding:35px 45px;height:135px;width:562px;font:30px 'Reza Zulmi Sans';text-transform:uppercase;letter-spacing:3px;box-shadow:rgba(31,206,227,.7) 0 0 35px 2px;border:none;border-radius:65px;text-align:center;display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;box-sizing:border-box;transition:background-color ease-in-out .2s, box-shadow ease-in-out .2s;}
 .button:hover {color:#fff;background-color:#188998;box-shadow:rgba(31,206,227,.95) 0 0 35px 2px;}
 .button.button_small, .button.button_small:visited {font-size:19px;width:350px;height:90px;padding:25px;box-shadow:rgba(31,206,227,.7) 0 0 13px 2px;}
 .button.button_small:hover {box-shadow:rgba(31,206,227,.95) 0 0 13px 2px;}
@@ -62,10 +62,10 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .header h5 {max-width:1370px;margin:0 auto 160px auto;}
 .header ul {display:flex;flex-wrap:wrap;justify-content:space-evenly;}
 .header ul li {font-size:44px;letter-spacing:3px;padding:0 15px 85px 15px;}
-.header ul li span {display:block;font:68px 'Copperplate';text-transform:uppercase;text-shadow:#e7af2a 0 0 18px, #e7af2a 0 0 18px;padding-top:15px;}
+.header ul li span {display:block;font:68px 'Reza Zulmi Sans';text-transform:uppercase;text-shadow:#e7af2a 0 0 18px, #e7af2a 0 0 18px;padding-top:15px;}
 .header ul li:nth-child(2) span {text-shadow:#fff 0 0 35px, #798cab 0 0 35px, #798cab 0 0 35px;}
 .header ul li:nth-child(3) span {text-shadow:#fff 0 0 35px, #d4783d 0 0 35px, #d4783d 0 0 35px;}
-.header ul + p {font:56px 'Copperplate';letter-spacing:15px;text-transform:uppercase;padding-bottom:175px;}
+.header ul + p {font:56px 'Reza Zulmi Sans';letter-spacing:15px;text-transform:uppercase;padding-bottom:175px;}
 
 
 
@@ -143,10 +143,10 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 
 /* About block */
 .about_block {padding-bottom:160px;background:url(../images/about_bg.jpg) center top no-repeat;}
-.about_block h2 {line-height:90px;}
-.about_block h2 span {font-size:60px;}
-.about_block h3 {font-size:75px;line-height:75px;text-shadow:#e7af2a 0 0 18px, #e7af2a 0 0 18px;text-transform:uppercase;text-align:left;max-width:750px;padding-bottom:95px;}
-.about_block h3 span {font-size:51px;display:block;}
+.about_block h2 {line-height:90px;letter-spacing:25px;}
+.about_block h2 span {font-size:60px;letter-spacing:10px;}
+.about_block h3 {font-size:65px;line-height:75px;text-shadow:#e7af2a 0 0 18px, #e7af2a 0 0 18px;text-transform:uppercase;text-align:left;max-width:750px;padding-bottom:95px;}
+.about_block h3 span {font-size:41px;display:block;}
 .about_block .about_list {display:flex;flex-wrap:wrap;justify-content:flex-end;padding-bottom:175px;}
 .about_block .about_list li {flex-basis:50%;padding:0 0 40px 0;box-sizing:border-box;}
 .about_block .about_list li span {display:block;max-width:460px;margin:0 auto;}
@@ -209,7 +209,7 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .feature_block ul li figure {height:100%;}
 .feature_block ul li figure div {height:140px;margin-bottom:35px;display:flex;align-items:flex-end;justify-content:center;}
 .feature_block ul li figure figcaption {border:3px solid #67b0bd;padding:0 45px 45px 45px;font-size:21px;text-align:left;min-height:calc(100% - 175px);box-sizing:border-box;box-shadow:#67b0bd 0 0 15px 0;background:url(../images/wave.png) center top/cover no-repeat;}
-.feature_block ul li figure figcaption h6 {text-align:center;margin-top:-28px;}
+.feature_block ul li figure figcaption h6 {text-align:center;margin-top:-23px;}
 
 
 
@@ -229,7 +229,7 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .rates_block ul > li figcaption header h6 {padding-bottom:20px;}
 .rates_block ul > li figcaption header p {font-size:17px;font-weight:700;color:#d6d8d0;text-transform:uppercase;letter-spacing:1px;}
 .rates_block ul > li figcaption header p span {color:#fff;text-shadow:#fff 0 0 18px, #fff 0 0 18px;display:block;padding-bottom:5px;}
-.rates_block ul > li figcaption header p strong {color:#fff;text-shadow:#fff 0 0 18px, #fff 0 0 18px;font:21px 'Copperplate';display:block;padding-bottom:5px;}
+.rates_block ul > li figcaption header p strong {color:#fff;text-shadow:#fff 0 0 18px, #fff 0 0 18px;font:21px 'Reza Zulmi Sans';display:block;padding-bottom:5px;}
 .rates_block ul > li figcaption ol {text-align:left;padding-bottom:20px;min-height:500px;}
 .rates_block ul > li figcaption ol li {padding-bottom:13px;}
 .rates_block ul > li figcaption ol li:before {content:'';display:inline-block;width:10px;height:10px;background:#fff;border-radius:50%;margin-right:8px;}
@@ -272,14 +272,14 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 
 /* Footer */
 .footer {padding-bottom:450px;}
-.footer h3 {font-size:71px;text-transform:uppercase;}
-.footer h3 strong {display:block;font-size:146px;}
+.footer h3 {font-size:61px;letter-spacing:10px;text-transform:uppercase;}
+.footer h3 strong {display:block;font-size:126px;}
 .footer h6 {font:34px 'Alegreya Sans', sans-serif;text-shadow:none;max-width:535px;margin:0 auto;padding-bottom:100px;}
 .footer .wrapper > div {display:flex;flex-wrap:wrap;justify-content:space-evenly;padding-bottom:220px;}
 .footer .wrapper > div .button {font-size:26px;}
-.footer .wrapper > div p:first-of-type .button {font-size:65px;}
+.footer .wrapper > div p:first-of-type .button {font-size:55px;}
 .footer form {border:5px solid #aecfd3;border-radius:20px;max-width:1210px;margin:0 auto;padding:70px;box-sizing:border-box;background:#050505 url(../images/footer_form_bg.jpg) right top no-repeat;}
-.footer form fieldset {padding:0;margin:0;border:none;font:25px 'Copperplate';text-transform:uppercase;text-shadow:#fff 0 0 18px, #fff 0 0 18px;}
+.footer form fieldset {padding:0;margin:0;border:none;font:25px 'Reza Zulmi Sans';text-transform:uppercase;text-shadow:#fff 0 0 18px, #fff 0 0 18px;}
 .footer form ul {display:flex;flex-wrap:wrap;justify-content:space-between;text-align:left;padding-bottom:15px;}
 .footer form ul li {flex-basis:calc(50% - 25px);padding:0 0 30px 0;}
 .footer form ul li:nth-child(5) {text-align:center;flex-basis:100%;}
@@ -468,7 +468,7 @@ h6 {font-size:32px;padding-bottom:30px;}
 	/* Mobile portrait and landscape modes */
 @media only screen and (max-width: 767px) {
 body {font-size:16px;}
-h1 {font-size:46px;padding-bottom:10px;}
+h1 {font-size:46px;letter-spacing:25px;padding-bottom:10px;}
 h2 {font-size:25px;line-height:34px;padding-bottom:20px;}
 h3 {font-size:25px;line-height:34px;}
 h5 {font-size:16px;line-height:24px;}
@@ -513,7 +513,7 @@ h6 {font-size:18px;line-height:24px;}
 .feedback_block .slider .slick-arrow, .feedback_block .slider .slick-arrow:visited {width:77px;height:72px;top:calc(50% - 36px);left:-40px;}
 .feedback_block .slider .slick-next {left:auto;right:-40px;}
 /* About block */
-.about_block h2 {line-height:34px;padding-bottom:60px;}
+.about_block h2 {line-height:34px;font-size:30px;letter-spacing:7px;padding-bottom:60px;}
 .about_block h2 span {font-size:25px;}
 .about_block h3 {font-size:25px;line-height:34px;}
 .about_block h3 span {font-size:25px;}
