@@ -493,7 +493,7 @@ h6 {font-size:18px;line-height:24px;}
 .reward_block ul li {padding:0;}
 .reward_block ul li figure div {height:230px;}
 .reward_block ul li figure div img {max-width:70%;max-height:90%;}
-.reward_block ul li figure figcaption {font-size:18px;}
+.reward_block ul li figure figcaption {font-size:18px;padding:0 20px;}
 .reward_block ul li figure figcaption strong {font-size:18px;}
 .reward_block ul li:last-child figure div:before {width:350px;height:287px;}
 .reward_block .wrapper > div {padding:40px 20px 30px 20px;}
@@ -521,13 +521,13 @@ h6 {font-size:18px;line-height:24px;}
 .about_block .about_list li span {max-width:100%;font-size:16px;padding-left:30px;padding-right:30px;background-size:12px auto;background-position:0 2px, right 0 top 2px;}
 .about_block .about_list li:nth-child(2) span, .about_block .about_list li:nth-child(3) span, .about_block .about_list li:nth-child(4) span, .about_block .about_list li:nth-child(5) span, .about_block .about_list li:nth-child(6) span, .about_block .about_list li:nth-child(7) span {max-width:100%;padding-left:30px;padding-right:30px;background-position:0 2px, right 0 top 2px;}
 .about_block .why_list {padding-bottom:50px;}
-.about_block .why_list li {padding:0 0 40px 0;}
+.about_block .why_list li {padding:0 20px 40px 20px;}
 .about_block .why_list li figure {padding-top:95px;}
 .about_block .why_list li figure div {left:50%;transform:translateX(-50%);top:0;}
 .about_block .why_list li figure div img {max-width:60%;margin-left:20%;}
 .about_block .why_list li:nth-child(even) figure div {left:50%;}
 .about_block .if_list {display:block;}
-.about_block .if_list li {padding:70px 0 40px 0;margin:0 auto;}
+.about_block .if_list li {padding:70px 20px 40px 20px;margin:0 auto;}
 .about_block .if_list li:before {width:60px;height:60px;background-size:100% auto;left:calc(50% - 30px);}
 .about_block .if_list + h3 {font-size:25px;padding-bottom:30px;}
 /* Get block */
