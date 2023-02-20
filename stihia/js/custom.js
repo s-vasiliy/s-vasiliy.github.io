@@ -13,6 +13,21 @@ $(function() {
 
 
 
+    // Data trigger
+			$('*[data-trigger]').on('click', function(){
+				var slideTrigger = $(this).attr('data-trigger');
+			    $(slideTrigger).addClass('active');
+			    $('html').addClass('active');
+				return false;
+			});
+			$('.form_wrap .close').on('click', function(){
+			    $(this).parent().removeClass('active');
+                $('html').removeClass('active');
+			});
+
+
+
+
     // Feedback Slider
             $('.slider').slick({
               adaptiveHeight: true,

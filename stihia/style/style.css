@@ -19,6 +19,7 @@
 
 /* Reset browser default styles */
 html, body {min-height:100%;-webkit-text-size-adjust:100%;overflow-x:hidden;}
+html.active {overflow:hidden;}
 body {font:33px 'Alegreya Sans', sans-serif;color:#fff;background:#050505;text-align:center;}
 div, html, body, p, ul, ol, li, a, form, img, table, td, h1, h2, h3, h4, h5, h6, blockquote, header, section, footer, aside, nav, article, figure, figcaption, dt, dd, dl {margin:0;padding:0;} 
 header, section, footer, aside, nav, article, figure, figcaption {display:block;}
@@ -237,7 +238,7 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .rates_block ul > li figcaption ol {text-align:left;padding-bottom:20px;min-height:500px;}
 .rates_block ul > li figcaption ol li {padding-bottom:13px;letter-spacing:2px;}
 .rates_block ul > li figcaption ol li:before {content:'';display:inline-block;width:10px;height:10px;background:#fff;border-radius:50%;margin-right:8px;}
-.rates_block ul > li figcaption div {font-size:27px;font-weight:500;text-transform:uppercase;letter-spacing:15px;margin-bottom:50px;}
+.rates_block ul > li figcaption div {font-size:27px;font-weight:500;text-transform:uppercase;letter-spacing:15px;margin-bottom:50px;display:none;}
 .rates_block ul > li figcaption div span {display:block;text-shadow:#fff 0 0 18px;font:60px 'Reza Zulmi Sans';letter-spacing:3px;}
 .rates_block ul > li figcaption ol + div {font-size:20px;font-weight:700;background:#fff;box-shadow:#fff 0 0 16px 0;letter-spacing:10px;color:#454545;max-width:365px;margin:0 auto 30px auto;border-radius:33px;padding:15px;box-sizing:border-box;}
 .rates_block ul > li figcaption ol + div span {font-size:55px;}
@@ -283,15 +284,21 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .footer .wrapper > div {display:flex;flex-wrap:wrap;justify-content:space-evenly;padding-bottom:220px;}
 .footer .wrapper > div .button {font-size:26px;}
 .footer .wrapper > div p:first-of-type .button {font-size:65px;}
-.footer form {border:5px solid #aecfd3;border-radius:20px;max-width:1210px;margin:0 auto;padding:70px;box-sizing:border-box;background:#050505 url(../images/footer_form_bg.jpg) right top no-repeat;}
-.footer form fieldset {padding:0;margin:0;border:none;font:25px 'Reza Zulmi Sans';text-transform:uppercase;text-shadow:#fff 0 0 18px, #fff 0 0 18px;}
-.footer form ul {display:flex;flex-wrap:wrap;justify-content:space-between;text-align:left;padding-bottom:15px;}
-.footer form ul li {flex-basis:calc(50% - 25px);padding:0 0 30px 0;}
-.footer form ul li:nth-child(5) {text-align:center;flex-basis:100%;}
-.footer form ul li label {display:block;padding:0 0 8px 25px;}
-.footer form ul li input[type="checkbox"] + label {display:inline-block;padding:0 0 0 20px;}
-.footer form > p {padding:35px 30px 0 30px;}
-.footer form .button {height:105px;width:415px;font-size:23px;}
+
+
+/* Form */
+.form_wrap {display:none;position:fixed;top:0;left:0;z-index:999;width:100%;height:100%;padding:25px;box-sizing:border-box;}
+.form_wrap.active {display:block;}
+.form_wrap .close {position:absolute;top:0;left:0;width:100%;height:100%;padding:25px;box-sizing:border-box;background:rgba(0,0,0,.5);}
+.form_wrap form {border:5px solid #aecfd3;border-radius:20px;max-width:1210px;margin:0 auto;padding:70px;box-sizing:border-box;background:#050505 url(../images/footer_form_bg.jpg) right top no-repeat;position:relative;z-index:99;max-height:calc(100vh - 50px);overflow:auto;}
+.form_wrap form fieldset {padding:0;margin:0;border:none;font:25px 'Reza Zulmi Sans';text-transform:uppercase;text-shadow:#fff 0 0 18px, #fff 0 0 18px;}
+.form_wrap form ul {display:flex;flex-wrap:wrap;justify-content:space-between;text-align:left;padding-bottom:15px;}
+.form_wrap form ul li {flex-basis:calc(50% - 25px);padding:0 0 30px 0;}
+.form_wrap form ul li:nth-child(5) {text-align:center;flex-basis:100%;}
+.form_wrap form ul li label {display:block;padding:0 0 8px 25px;}
+.form_wrap form ul li input[type="checkbox"] + label {display:inline-block;padding:0 0 0 20px;}
+.form_wrap form > p {padding:35px 30px 0 30px;}
+.form_wrap form .button {height:105px;width:415px;font-size:23px;}
 
 
 
@@ -423,8 +430,8 @@ h6 {font-size:32px;padding-bottom:30px;}
 .footer .wrapper > div {padding-bottom:100px;}
 .footer .wrapper > div .button {font-size:20px;margin-bottom:100px;}
 .footer .wrapper > div p:first-of-type .button {font-size:50px;}
-.footer form {max-width:655px;background-position:right -350px top;}
-.footer form ul {display:block;}
+.form_wrap form {max-width:655px;background-position:right -350px top;}
+.form_wrap form ul {display:block;}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1299px) {
@@ -631,11 +638,11 @@ input[type="text"], input[type="telephone"] {font-size:18px;border-width:3px;bor
 .footer .wrapper > div {padding-bottom:20px;display:block;}
 .footer .wrapper > div .button {font-size:10px;margin-bottom:25px;width:100%;}
 .footer .wrapper > div p:first-of-type .button {font-size:25px;}
-.footer form {padding:20px 30px 30px 30px;max-width:320px;}
-.footer form fieldset {font-size:16px;}
-.footer form ul li:nth-child(6), .footer form ul li:nth-child(7) {text-align:center;}
-.footer form > p {padding:15px 0 0 0;}
-.footer form .button {height:57px;width:100%;font-size:18px;}
+.form_wrap form {padding:20px 30px 30px 30px;max-width:320px;}
+.form_wrap form fieldset {font-size:16px;}
+.form_wrap form ul li:nth-child(6), .form_wrap form ul li:nth-child(7) {text-align:center;}
+.form_wrap form > p {padding:15px 0 0 0;}
+.form_wrap form .button {height:57px;width:100%;font-size:18px;}
 }
 
 
