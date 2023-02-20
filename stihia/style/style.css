@@ -594,7 +594,7 @@ input[type="text"], input[type="telephone"] {font-size:18px;border-width:3px;bor
 .feature_block ul li figure div img {max-width:70px;}
 .feature_block ul li figure figcaption {font-size:14px;border-width:2px;padding:0 5px 20px 5px;}
 .feature_block ul li:nth-child(3) figure figcaption, .feature_block ul li:nth-last-child(2) figure figcaption, .feature_block ul li:last-child figure figcaption {padding-left:20px;padding-right:20px;}
-.feature_block ul li figure figcaption h6 {margin-top:-14px;padding-bottom:25px;}
+.feature_block ul li figure figcaption h6 {margin-top:-14px;padding-bottom:25px;text-shadow:#fff 0 0 18px, #798cab 0 0 18px, #798cab 0 0 18px, #fff 0 0 18px, #798cab 0 0 18px, #798cab 0 0 18px, #fff 0 0 18px, #798cab 0 0 18px, #798cab 0 0 18px;}
 /* Rates block */
 .rates_block {padding-bottom:190px;}
 .rates_block h2 {font-size:47px;padding-bottom:55px;}
@@ -631,8 +631,9 @@ input[type="text"], input[type="telephone"] {font-size:18px;border-width:3px;bor
 .footer .wrapper > div {padding-bottom:20px;display:block;}
 .footer .wrapper > div .button {font-size:10px;margin-bottom:25px;width:100%;}
 .footer .wrapper > div p:first-of-type .button {font-size:25px;}
-.footer form {padding:15px;max-width:290px;}
-.footer form fieldset {font-size:18px;}
+.footer form {padding:20px 30px 30px 30px;max-width:320px;}
+.footer form fieldset {font-size:16px;}
+.footer form ul li:nth-child(6), .footer form ul li:nth-child(7) {text-align:center;}
 .footer form > p {padding:15px 0 0 0;}
 .footer form .button {height:57px;width:100%;font-size:18px;}
 }
@@ -642,4 +643,13 @@ input[type="text"], input[type="telephone"] {font-size:18px;border-width:3px;bor
 @media only screen and (max-width: 479px) {
 /* Header */
 .header {padding-top:370px;}
+}
+
+@media only screen and (min-width: 380px) and (max-width: 430px) {
+/* Header */
+.header {padding-top:420px;}
+}
+@media only screen and (min-width: 430px) and (max-width: 480px) {
+/* Header */
+.header {padding-top:480px;}
 }
