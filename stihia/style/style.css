@@ -305,6 +305,9 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 
 /* Media Queries */
 	/* Desktop */
+@media only screen and (min-width: 1710px) {
+.wrapper {max-width:1920px;padding:0 135px;}
+}
 @media only screen and (max-width: 1500px) {
 /* Header */
 .header {padding-top:805px;}
@@ -604,7 +607,7 @@ input[type="text"], input[type="telephone"] {font-size:18px;border-width:3px;bor
 .get_block .guarantee div {padding:15px 10px;font-size:15px;max-width:250px;margin:0 auto 20px auto;}
 .get_block .guarantee p {font-size:15px;letter-spacing:2px;max-width:235px;margin:0 auto;text-shadow:#fff 0 0 18px, #798cab 0 0 18px, #798cab 0 0 18px, #fff 0 0 18px, #798cab 0 0 18px, #798cab 0 0 18px;}
 /* Feature block */
-.footer_bg {background:url(../images/footer_bg3.jpg) center bottom 300px/700px auto no-repeat;background-size:100% auto;}
+.footer_bg {background:url(../images/footer_bg4.jpg) center bottom 250px/700px auto no-repeat, url(../images/footer_bg3.jpg) center top/700px auto no-repeat;}
 .feature_block {padding-bottom:70px;}
 .feature_block header {padding-bottom:0;}
 .feature_block header p {padding-bottom:50px;}
