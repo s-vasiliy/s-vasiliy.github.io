@@ -38,7 +38,7 @@ a:active, a:hover {outline:0;text-decoration:none;color:#137581;}
 
 /* All */
 .wrapper {max-width:1760px;padding:0 35px;margin:0 auto;position:relative;}
-h1 {font:201px 'Reza Zulmi Sans';letter-spacing:45px;padding-bottom:20px;text-shadow:#fff 0 0 24px;}
+h1 {font:175px 'Reza Zulmi Sans';letter-spacing:45px;padding-bottom:20px;text-shadow:#fff 0 0 24px;}
 h2 {font:96px/115px 'Reza Zulmi Sans';letter-spacing:10px;text-transform:uppercase;text-shadow:#e7af2a 0 0 18px, #e7af2a 0 0 18px;padding-bottom:100px;max-width:1200px;margin:0 auto;}
 h3 {font:75px 'Reza Zulmi Sans';letter-spacing:2px;}
 h4 {font:51px 'Reza Zulmi Sans';}
@@ -58,20 +58,20 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 
 
 /* Header */
-.header {padding:1025px 0 160px 0;background:url(../images/header.jpg) center top/100% auto no-repeat;}
-.header h5 {max-width:1370px;margin:0 auto 160px auto;}
+.header {padding:315px 0 130px 0;background:url(../images/header.jpg) center top/100% auto no-repeat;}
+.header h5 {max-width:1270px;margin:0 auto 500px auto;font-size:39px;}
 .header ul {display:flex;flex-wrap:wrap;justify-content:space-evenly;}
-.header ul li {font-size:44px;letter-spacing:3px;padding:0 15px 85px 15px;}
+.header ul li {font-size:44px;letter-spacing:3px;padding:0 15px 50px 15px;}
 .header ul li span {display:block;font:68px 'Reza Zulmi Sans';text-transform:uppercase;text-shadow:#e7af2a 0 0 18px, #e7af2a 0 0 18px;padding-top:15px;}
 .header ul li:nth-child(2) span {text-shadow:#fff 0 0 35px, #798cab 0 0 35px, #798cab 0 0 35px;}
 .header ul li:nth-child(3) span {text-shadow:#fff 0 0 35px, #d4783d 0 0 35px, #d4783d 0 0 35px;}
-.header ul + p {font:42px 'Reza Zulmi Sans';letter-spacing:16px;text-transform:uppercase;padding-bottom:175px;}
+.header ul + p {font:42px 'Reza Zulmi Sans';letter-spacing:16px;text-transform:uppercase;padding-bottom:125px;}
 
 
 
 
 /* Study block */
-.study_block {background:url(../images/study_bg.jpg) center center/100% auto no-repeat;padding-bottom:90px;}
+.study_block {background:url(../images/study_bg.jpg) center center/100% auto no-repeat;padding-bottom:60px;}
 .study_block h5 {padding-bottom:100px;}
 .study_block ul {display:flex;flex-wrap:wrap;justify-content:center;margin:0 -70px 60px -70px;}
 .study_block ul li {min-height:204px;width:calc(33.33% - 140px);max-width:455px;background:url(../images/wave.png) center top/cover no-repeat;margin:0 70px 90px 70px;border:2px solid #a4b0c7;font-size:21px;letter-spacing:1px;text-align:left;padding:30px 30px 30px 60px;box-sizing:border-box;display:flex;align-items:center;position:relative;box-shadow:#519596 0 0 18px 0, #519596 0 0 18px 0;}
@@ -98,7 +98,7 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 
 
 /* Reward block */
-.reward_feedback_bg {background:url(../images/reward_bg.jpg) right top no-repeat;padding-bottom:230px;}
+.reward_feedback_bg {background:url(../images/reward_bg.jpg) right top no-repeat;padding-bottom:10px;}
 .reward_block {padding-bottom:130px;}
 .reward_block ul {display:flex;flex-wrap:wrap;justify-content:center;}
 .reward_block ul li {flex-basis:33.33%;padding:0 45px 100px 45px;box-sizing:border-box;}
@@ -179,7 +179,7 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .get_block {background:url(../images/get_bg.jpg) left top no-repeat;padding-bottom:300px;}
 .get_block header {display:flex;justify-content:flex-end;}
 .get_block h3 {max-width:900px;text-shadow:#b8dae0 0 0 18px, #b8dae0 0 0 18px;text-align:right;line-height:80px;padding-bottom:80px;}
-.get_block .get_list {display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start;padding-bottom:200px;}
+.get_block .get_list {display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:flex-start;padding-bottom:100px;}
 .get_block .get_list li {max-width:567px;flex-basis:50%;padding:40px 45px;box-sizing:border-box;position:relative;background:url(../images/border_top.png) center top/98% auto no-repeat, url(../images/border_bottom.png) center bottom/98% auto no-repeat, rgba(104,134,147,.8);box-shadow:rgba(104,134,147,.8) 0 0 55px 0;border-radius:70px;min-height:200px;margin:0 0 100px 210px;display:flex;align-items:center;justify-content:center;}
 .get_block .get_list li:nth-child(4), .get_block .get_list li:last-child {padding-left:55px;padding-right:55px;}
 .get_block .get_list li:before {content:'';display:block;width:100%;height:calc(100% - 128px);position:absolute;top:64px;left:0;background:url(../images/border_center.png) center 65px/98% auto repeat-y;}
@@ -204,12 +204,12 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 
 
 /* Feature block */
-.footer_bg {background:url(../images/footer_bg.jpg) center top no-repeat, url(../images/footer_form_bg.jpg) center bottom no-repeat;}
+.footer_bg {background:url(../images/footer_bg.jpg) center bottom no-repeat, url(../images/blank.gif) center bottom no-repeat;}
 .feature_block {padding-bottom:210px;}
 .feature_block header {display:flex;flex-wrap:wrap;justify-content:space-between;padding-bottom:65px;}
 .feature_block header h4 {flex:1;font-weight:700;text-transform:uppercase;font:700 33px 'Alegreya Sans';letter-spacing:5px;text-align:justify;padding:0 100px 20px 0;}
 .feature_block header h4 span {display:block;font:62px/75px 'Reza Zulmi Sans';letter-spacing:6px;text-shadow:#fff 0 0 30px, #fff 0 0 30px;text-align:left;padding-bottom:35px;}
-.feature_block ul {display:flex;flex-wrap:wrap;justify-content:flex-end;margin:0 -47px;}
+.feature_block ul {display:flex;flex-wrap:wrap;justify-content:center;margin:0 -47px;}
 .feature_block ul li {flex-basis:33.33%;padding:0 47px 60px 47px;box-sizing:border-box;}
 .feature_block ul li figure {height:100%;}
 .feature_block ul li figure div {height:140px;margin-bottom:35px;display:flex;align-items:flex-end;justify-content:center;}
@@ -220,22 +220,22 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 
 
 /* Rates block */
-.rates_block {padding-bottom:300px;}
+.rates_block {padding-bottom:650px;}
 .rates_block h2 {text-shadow:#fff 0 0 18px, #fff 0 0 18px;padding-bottom:150px;font-size:154px;}
 .rates_block ul {display:flex;flex-wrap:wrap;justify-content:center;margin:0 -32px;}
 .rates_block ul > li {width:33.33%;padding:0 32px 75px 32px;box-sizing:border-box;}
-.rates_block ul > li figure {border:5px solid #aecfd3;border-radius:25px;box-sizing:border-box;}
+.rates_block ul > li figure {height:100%;border:5px solid #aecfd3;border-radius:25px;box-sizing:border-box;}
 .rates_block ul > li figure > div {height:215px;position:relative;}
 .rates_block ul > li figure > div:before {content:'';display:block;width:100%;height:130px;position:absolute;bottom:-60px;left:0;background:url(../images/rate_light.png) center center/103% auto no-repeat;}
 .rates_block ul > li figure > div img {width:100%;height:100%;object-fit:cover;border-radius:20px 20px 0 0;}
-.rates_block ul > li figcaption {padding:90px 45px 50px 45px;font-size:21px;background:rgba(255,255,255,.22);}
+.rates_block ul > li figcaption {padding:90px 45px 90px 45px;font-size:21px;background:rgba(255,255,255,.22);min-height:calc(100% - 215px);box-sizing:border-box;border-radius:0 0 20px 20px;}
 .rates_block ul > li div + figcaption {padding-top:45px;}
-.rates_block ul > li figcaption header {min-height:280px;}
+.rates_block ul > li figcaption header {min-height:310px;}
 .rates_block ul > li figcaption header h6 {padding-bottom:20px;}
 .rates_block ul > li figcaption header p {font-size:17px;font-weight:700;color:#d6d8d0;text-transform:uppercase;letter-spacing:1px;padding-left:10px;padding-right:10px;}
 .rates_block ul > li figcaption header p span {color:#fff;text-shadow:#fff 0 0 18px, #fff 0 0 18px;font-size:18px;display:block;padding-bottom:5px;}
-.rates_block ul > li figcaption header p strong {color:#fff;text-shadow:#fff 0 0 18px, #fff 0 0 18px;font:21px 'Reza Zulmi Sans';letter-spacing:2px;display:block;padding-bottom:5px;}
-.rates_block ul > li figcaption ol {text-align:left;padding-bottom:20px;min-height:500px;}
+.rates_block ul > li figcaption header p strong {color:#fff;text-shadow:#fff 0 0 18px, #fff 0 0 18px;font:21px 'Reza Zulmi Sans';letter-spacing:2px;display:block;padding-bottom:5px;padding-top:30px;}
+.rates_block ul > li figcaption ol {text-align:left;padding-bottom:20px;min-height:700px;}
 .rates_block ul > li figcaption ol li {padding-bottom:13px;letter-spacing:2px;}
 .rates_block ul > li figcaption ol li:before {content:'';display:inline-block;width:10px;height:10px;background:#fff;border-radius:50%;margin-right:8px;}
 .rates_block ul > li figcaption div {font-size:27px;font-weight:500;text-transform:uppercase;letter-spacing:15px;margin-bottom:50px;display:none;}
@@ -260,15 +260,17 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .rates_block ul > li:nth-child(3) figure > div img {mix-blend-mode:screen;}
 .rates_block ul > li:nth-child(3) figcaption {background:rgba(39,100,108,.54);}
 .rates_block ul > li:nth-child(3) figcaption .button, .rates_block ul > li:nth-child(3) figcaption .button:visited {background-image:url(../images/button5.png);background-size:100% auto;}
+.rates_block ul > li:nth-child(3) figcaption header p:last-child {padding-top:25px;margin:0 auto;max-width:300px;}
 .rates_block ul > li:nth-child(4) figure > div:before {background-image:url(../images/rate_light4.png);}
+.rates_block ul > li:nth-child(4) figcaption {padding-bottom:50px;}
 .rates_block ul > li:nth-child(4) figcaption header {min-height:1px;}
 .rates_block ul > li:nth-child(4) figcaption header p span {margin:0 -10px;}
 .rates_block ul > li:nth-child(4) figcaption ol {min-height:1px;padding:25px 0 40px 0;}
 .rates_block ul > li:nth-child(4) figcaption .button, .rates_block ul > li:nth-child(4) figcaption .button:visited {background-color:rgba(104,134,147,.8);background-image:url(../images/button2.png);box-shadow:rgba(104,134,147,.7) 0 0 13px 2px;background-size:100% auto;}
 .rates_block ul > li:nth-child(4) figcaption .button:hover {background-color:rgba(104,134,147,.9);box-shadow:rgba(104,134,147,.7) 0 0 25px 2px;}
-.rates_block ul > li:last-child figcaption {background:none;}
+.rates_block ul > li:last-child figcaption {background:none;padding-bottom:50px;}
 .rates_block ul > li:last-child figcaption header {padding-bottom:60px;}
-.rates_block ul > li:last-child figcaption header h6 {padding-bottom:140px;}
+.rates_block ul > li:last-child figcaption header h6 {padding-bottom:40px;}
 .rates_block ul > li:last-child figcaption header p {font-size:18px;color:#fff;padding-left:20px;padding-right:20px;}
 .rates_block ul > li:last-child figcaption header p strong {text-shadow:none;font:700 33px 'Alegreya Sans';padding:8px 0 0 0;}
 .rates_block ul > li:last-child figcaption .button {font-size:26px;line-height:28px;}
@@ -277,7 +279,7 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 
 
 /* Footer */
-.footer {padding-bottom:450px;}
+.footer {padding-bottom:80px;}
 .footer h3 {font-size:71px;;letter-spacing:8px;text-transform:uppercase;}
 .footer h3 strong {display:block;font-size:143px;line-height:150px;padding-bottom:10px;font-weight:400;}
 .footer h6 {font:34px 'Alegreya Sans', sans-serif;text-shadow:none;max-width:535px;margin:0 auto;padding-bottom:100px;}
@@ -308,13 +310,35 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 @media only screen and (min-width: 1710px) {
 .wrapper {max-width:1920px;padding:0 135px;}
 }
+@media only screen and (min-width: 960px) {
+/* Header */
+.header:before {content:'';display:block;width:965px;height:1205px;background:url(../images/shadow.png) center center/100% auto no-repeat;position:absolute;top:120%;left:0;mix-blend-mode:screen;z-index:1;}
+.header .wrapper {z-index:2;}
+/* Study block */
+.study_block {position:relative;}
+.study_block:before {content:'';display:block;width:920px;height:1095px;background:url(../images/shadow2.png) center center/100% auto no-repeat;position:absolute;bottom:15%;left:0;mix-blend-mode:screen;}
+.study_block:after {content:'';display:block;width:950px;height:1205px;background:url(../images/shadow3.png) center center/100% auto no-repeat;position:absolute;bottom:-7%;right:0;mix-blend-mode:screen;}
+/* Feedback block */
+.feedback_block {position:relative;z-index:2;}
+/* About block */
+.about_block {position:relative;}
+.about_block:before {content:'';display:block;width:1306px;height:1721px;background:url(../images/shadow4.png) center center/100% auto no-repeat;position:absolute;bottom:0;left:0;mix-blend-mode:screen;opacity:.5;}
+.about_block:after {content:'';display:block;width:1174px;height:1699px;background:url(../images/shadow5.png) center center/100% auto no-repeat;position:absolute;bottom:-5%;right:0;mix-blend-mode:screen;opacity:.5;}
+/* Get block */
+.get_block {position:relative;}
+.get_block:before {content:'';display:block;width:1905px;height:1670px;background:url(../images/shadow6.jpg) center center/100% auto no-repeat;position:absolute;bottom:-8%;right:0;mix-blend-mode:screen;opacity:.5;}
+.get_block:after {content:'';display:block;width:708px;height:1541px;background:url(../images/shadow7.jpg) center center/100% auto no-repeat;position:absolute;bottom:-4%;left:0;mix-blend-mode:screen;opacity:.5;}
+}
 @media only screen and (min-width: 1301px) and (max-width: 1709px) {
+/* Header */
+.header {padding-top:200px;}
 /* Study block */
 .study_block {padding-left:85px;padding-right:85px;}
 }
 @media only screen and (max-width: 1500px) {
 /* Header */
-.header {padding-top:805px;}
+.header {padding-top:130px;}
+.header h5 {margin-bottom:350px;}
 }
 @media only screen and (max-width: 1400px) {
 /* Get block */
@@ -459,7 +483,7 @@ h6 {font-size:32px;padding-bottom:30px;}
 .rates_block ul > li {padding:0 20px 175px 20px;}
 .rates_block ul > li figure > div {height:265px;}
 .rates_block ul > li figcaption {padding:110px 60px 50px 60px;}
-.rates_block ul > li div + figcaption {padding-top:90px;}
+.rates_block ul > li div + figcaption {padding-top:90px;min-height:calc(100% - 265px);}
 .rates_block ul > li figcaption header {min-height:1px;}
 .rates_block ul > li figcaption ol {padding-bottom:50px;min-height:1px;}
 .rates_block ul > li figcaption ol li {padding-bottom:20px;}
@@ -679,8 +703,7 @@ input[type="text"], input[type="telephone"] {font-size:18px;border-width:3px;bor
 .header {padding-top:460px;}
 }
 @media only screen and (min-width: 390px) and (max-width: 430px) {
-.study_block ul:last-of-type li:nth-child(1), .study_block ul:last-of-type li:nth-child(4) {padding-right:60px;}
-.study_block ul:last-of-type li:nth-child(5) {padding-right:70px;}
+.study_block ul:last-of-type li:nth-child(1) {padding-right:60px;}
 }
 @media only screen and (min-width: 430px) and (max-width: 480px) {
 /* Header */
