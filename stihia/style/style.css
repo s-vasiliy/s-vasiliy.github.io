@@ -171,6 +171,7 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .about_block .if_list li:nth-child(4):before {background-image:url(../images/x4.png);}
 .about_block .if_list li:nth-child(5):before {background-image:url(../images/x3.png);}
 .about_block .if_list + h3 {text-shadow:#b8dae0 0 0 18px, #b8dae0 0 0 18px;letter-spacing:3px;text-align:center;max-width:1010px;margin:0 auto;padding-bottom:150px;}
+.about_block .button {z-index:2;position:relative;}
 
 
 
@@ -228,14 +229,14 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .rates_block ul > li figure > div {height:215px;position:relative;}
 .rates_block ul > li figure > div:before {content:'';display:block;width:100%;height:130px;position:absolute;bottom:-60px;left:0;background:url(../images/rate_light.png) center center/103% auto no-repeat;}
 .rates_block ul > li figure > div img {width:100%;height:100%;object-fit:cover;border-radius:20px 20px 0 0;}
-.rates_block ul > li figcaption {padding:90px 45px 90px 45px;font-size:21px;background:rgba(255,255,255,.22);min-height:calc(100% - 215px);box-sizing:border-box;border-radius:0 0 20px 20px;}
+.rates_block ul > li figcaption {padding:90px 45px 90px 45px;font-size:21px;background:rgba(255,255,255,.22);min-height:calc(100% - 215px);box-sizing:border-box;border-radius:0 0 20px 20px;display:flex;flex-flow:column wrap;}
 .rates_block ul > li div + figcaption {padding-top:45px;}
 .rates_block ul > li figcaption header {min-height:310px;}
 .rates_block ul > li figcaption header h6 {padding-bottom:20px;}
 .rates_block ul > li figcaption header p {font-size:17px;font-weight:700;color:#d6d8d0;text-transform:uppercase;letter-spacing:1px;padding-left:10px;padding-right:10px;}
 .rates_block ul > li figcaption header p span {color:#fff;text-shadow:#fff 0 0 18px, #fff 0 0 18px;font-size:18px;display:block;padding-bottom:5px;}
 .rates_block ul > li figcaption header p strong {color:#fff;text-shadow:#fff 0 0 18px, #fff 0 0 18px;font:21px 'Reza Zulmi Sans';letter-spacing:2px;display:block;padding-bottom:5px;padding-top:30px;}
-.rates_block ul > li figcaption ol {text-align:left;padding-bottom:20px;min-height:700px;}
+.rates_block ul > li figcaption ol {text-align:left;padding-bottom:20px;min-height:700px;flex:1;}
 .rates_block ul > li figcaption ol li {padding-bottom:13px;letter-spacing:2px;}
 .rates_block ul > li figcaption ol li:before {content:'';display:inline-block;width:10px;height:10px;background:#fff;border-radius:50%;margin-right:8px;}
 .rates_block ul > li figcaption div {font-size:27px;font-weight:500;text-transform:uppercase;letter-spacing:15px;margin-bottom:50px;display:none;}
@@ -328,6 +329,10 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 .get_block {position:relative;}
 .get_block:before {content:'';display:block;width:1905px;height:1670px;background:url(../images/shadow6.jpg) center center/100% auto no-repeat;position:absolute;bottom:-8%;right:0;mix-blend-mode:screen;opacity:.5;}
 .get_block:after {content:'';display:block;width:708px;height:1541px;background:url(../images/shadow7.jpg) center center/100% auto no-repeat;position:absolute;bottom:-4%;left:0;mix-blend-mode:screen;opacity:.5;}
+}
+@media only screen and (min-width: 1301px) and (max-width: 1620px) {
+/* Get block */
+.get_block:after {bottom:17%;}
 }
 @media only screen and (min-width: 1301px) and (max-width: 1709px) {
 /* Header */
