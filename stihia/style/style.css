@@ -332,7 +332,11 @@ input[type="text"], input[type="telephone"] {font:33px 'Alegreya Sans', sans-ser
 }
 @media only screen and (min-width: 1301px) and (max-width: 1620px) {
 /* Get block */
-.get_block:after {bottom:17%;}
+.get_block .get_list li {margin-left:100px;}
+}
+@media only screen and (min-width: 1700px) and (max-width: 1830px) {
+/* Get block */
+.get_block .get_list li {margin-left:140px;}
 }
 @media only screen and (min-width: 1301px) and (max-width: 1709px) {
 /* Header */
